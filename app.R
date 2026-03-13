@@ -26,7 +26,7 @@ all_categories <- sort(unique(all_questions$keyword_en))
 
 # ── UI ────────────────────────────────────────────────────────────────────────
 ui <- bslib::page_sidebar(
-  title = "MBC Survey — Social Values in South Korea",
+  title = 'What is your "Political Blood Type?"',
   theme = bslib::bs_theme(
     version      = 5,
     bg           = "#FAFAFA",
@@ -42,7 +42,7 @@ ui <- bslib::page_sidebar(
     width = 340,
     bg    = "white",
     open  = TRUE,
-    padding = "20px 16px",
+    padding = "16px",
 
     tags$div(class = "sidebar-label", "Category"),
     shiny::selectizeInput(
