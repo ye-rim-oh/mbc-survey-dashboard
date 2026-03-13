@@ -60,7 +60,7 @@ make_dist_chart <- function(q_long) {
     plotly::layout(
       legend = list(orientation = "h", y = -0.2, x = 0.5, xanchor = "center",
                     title = list(text = "")),
-      margin = list(t = 10, b = 70, l = 50, r = 30)
+      margin = list(t = 40, b = 70, l = 50, r = 30)
     ) |>
     plotly::config(displayModeBar = FALSE)
 }

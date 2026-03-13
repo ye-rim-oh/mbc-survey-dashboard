@@ -31,14 +31,14 @@ body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .filter-group {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .ctrl-label {
@@ -49,8 +49,13 @@ body {
   letter-spacing: 0.5px !important;
   white-space: nowrap;
   margin: 0 !important;
-  display: block;
-  margin-bottom: 5px !important;
+  display: inline !important;
+  align-self: center;
+}
+
+.filter-group .shiny-input-checkboxgroup {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* ── selectize ────────────────────────────────────────────────────────────── */
@@ -59,20 +64,21 @@ body {
   border-radius: 7px !important;
   box-shadow: none !important;
   font-size: 13px !important;
-  padding: 7px 10px !important;
+  padding: 10px 12px !important;
   background: #FAFAFA !important;
-  min-height: 36px !important;
+  min-height: 44px !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   flex-wrap: nowrap !important;
 }
 
-.selectize-input > * {
+.selectize-input .item {
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
-  max-width: 100% !important;
+  max-width: calc(100% - 24px) !important;
+  display: block !important;
 }
 
 .selectize-input.focus {
