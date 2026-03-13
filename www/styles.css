@@ -1,0 +1,178 @@
+/* www/styles.css — Apple-inspired design for MBC Survey Dashboard */
+
+/* ── Fonts & Base ─────────────────────────────────────────────────────────── */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+               "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F7;
+  color: #1D1D1F;
+  margin: 0;
+}
+
+/* ── Page Title ────────────────────────────────────────────────────────────── */
+.navbar, .navbar-default {
+  background: #ffffff !important;
+  border-bottom: 1px solid #E5E5EA !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06) !important;
+}
+
+h1, h2, .app-title {
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: #1D1D1F;
+}
+
+/* ── Sidebar ───────────────────────────────────────────────────────────────── */
+.bslib-sidebar-layout > .sidebar {
+  background-color: #F5F5F7 !important;
+  border-right: 1px solid #E5E5EA !important;
+  padding: 20px 16px !important;
+}
+
+.sidebar .sidebar-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #86868B;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+/* ── Main Content ──────────────────────────────────────────────────────────── */
+.bslib-sidebar-layout > .main {
+  background-color: #F5F5F7 !important;
+  padding: 24px !important;
+}
+
+/* ── Cards ─────────────────────────────────────────────────────────────────── */
+.card, .bslib-card {
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+  padding: 20px !important;
+  margin-bottom: 16px !important;
+}
+
+.card-header, .bslib-card > .card-header {
+  background: transparent !important;
+  border-bottom: 1px solid #F2F2F7 !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  color: #1D1D1F !important;
+  padding: 0 0 12px 0 !important;
+  margin-bottom: 16px !important;
+}
+
+/* ── Tabs ───────────────────────────────────────────────────────────────────── */
+.nav-tabs {
+  border-bottom: 1px solid #E5E5EA !important;
+  margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+  color: #86868B !important;
+  border: none !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 8px 16px !important;
+  border-radius: 0 !important;
+  border-bottom: 2px solid transparent !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: #0071E3 !important;
+  border-bottom: 2px solid #0071E3 !important;
+  background: transparent !important;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #1D1D1F !important;
+}
+
+/* ── Form Controls ─────────────────────────────────────────────────────────── */
+.selectize-input {
+  border: 1px solid #D2D2D7 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  font-size: 14px !important;
+  padding: 8px 12px !important;
+}
+
+.selectize-input.focus {
+  border-color: #0071E3 !important;
+  box-shadow: 0 0 0 3px rgba(0,113,227,0.12) !important;
+}
+
+label {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #1D1D1F !important;
+  margin-bottom: 6px !important;
+  display: block;
+}
+
+/* ── DT Table ───────────────────────────────────────────────────────────────── */
+.dataTables_wrapper {
+  font-size: 13px;
+}
+
+table.dataTable tbody tr {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+table.dataTable tbody tr:hover {
+  background-color: #F2F2F7 !important;
+}
+
+table.dataTable tbody tr.selected {
+  background-color: #E8F0FE !important;
+  color: #0071E3 !important;
+}
+
+table.dataTable thead th {
+  font-size: 12px;
+  font-weight: 600;
+  color: #86868B;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid #E5E5EA !important;
+  background: transparent !important;
+}
+
+.dataTables_info, .dataTables_paginate {
+  font-size: 12px;
+  color: #86868B;
+}
+
+/* ── Plot output ────────────────────────────────────────────────────────────── */
+.plotly .modebar {
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+.plotly:hover .modebar {
+  opacity: 1;
+}
+
+/* ── Question detail card ───────────────────────────────────────────────────── */
+#question_detail {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1D1D1F;
+  padding: 14px 16px;
+  background: #F2F2F7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* ── Scrollbar styling ──────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #C7C7CC; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #AEAEB2; }
