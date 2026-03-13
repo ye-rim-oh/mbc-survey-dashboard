@@ -1,42 +1,56 @@
 /* MBC Survey Dashboard — styles.css */
 
-/* ── Base ─────────────────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   background: #FAFAFA;
   color: #111111;
+  margin: 0;
 }
 
-/* ── Page title bar ───────────────────────────────────────────────────────── */
-.navbar {
-  background: #ffffff !important;
-  border-bottom: 1px solid #E8E8E8 !important;
-  box-shadow: none !important;
-  padding: 0 24px !important;
+/* ── Controls ─────────────────────────────────────────────────────────────── */
+.controls-wrap {
+  background: #ffffff;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 16px 20px 12px;
 }
 
-.navbar-brand {
-  font-size: 15px !important;
+.control-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.control-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.filter-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ctrl-label {
+  font-size: 11px !important;
   font-weight: 600 !important;
-  letter-spacing: -0.2px !important;
-  color: #111111 !important;
-}
-
-/* ── Sidebar ──────────────────────────────────────────────────────────────── */
-.bslib-sidebar-layout > .sidebar {
-  border-right: 1px solid #EBEBEB !important;
-  box-shadow: none !important;
-}
-
-.sidebar-label {
-  font-size: 11px;
-  font-weight: 600;
-  color: #888888;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  margin-bottom: 7px;
+  color: #888888 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  white-space: nowrap;
+  margin: 0 !important;
+  display: block;
+  margin-bottom: 5px !important;
 }
 
 /* ── selectize ────────────────────────────────────────────────────────────── */
@@ -47,12 +61,13 @@ body {
   font-size: 13px !important;
   padding: 7px 10px !important;
   background: #FAFAFA !important;
+  min-height: 36px !important;
 }
 
 .selectize-input.focus {
   border-color: #2563EB !important;
   box-shadow: 0 0 0 3px rgba(37,99,235,0.1) !important;
-  background: #ffffff !important;
+  background: #fff !important;
 }
 
 .selectize-dropdown {
@@ -62,76 +77,53 @@ body {
   font-size: 13px !important;
 }
 
-/* ── DT table ─────────────────────────────────────────────────────────────── */
-.dataTables_wrapper { font-size: 13px; }
-
-table.dataTable {
-  border-collapse: collapse !important;
+/* ── Checkboxes ───────────────────────────────────────────────────────────── */
+.shiny-input-checkboxgroup label {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: #333333 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  margin: 0 !important;
 }
 
-table.dataTable tbody tr {
-  cursor: pointer;
-  border-bottom: 1px solid #F2F2F2 !important;
-  transition: background 0.1s;
+.shiny-input-checkboxgroup .checkbox-inline {
+  margin-right: 10px !important;
 }
 
-table.dataTable tbody tr:hover td {
-  background: #F5F8FF !important;
+.shiny-input-checkboxgroup input[type="checkbox"] {
+  accent-color: #2563EB;
 }
 
-table.dataTable tbody tr.selected td {
-  background: #EFF4FF !important;
-  color: #2563EB !important;
-  font-weight: 500 !important;
+/* ── Charts ───────────────────────────────────────────────────────────────── */
+.charts-wrap {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-table.dataTable thead th {
-  display: none !important;
-}
-
-table.dataTable td {
-  padding: 8px 4px !important;
-  line-height: 1.4 !important;
-  border: none !important;
-  color: #333333;
-}
-
-.dataTables_info,
-.dataTables_paginate { display: none; }
-
-/* ── Card (navset_card_underline) ─────────────────────────────────────────── */
-.card {
+.chart-card {
   background: #ffffff !important;
   border: 1px solid #EBEBEB !important;
   border-radius: 10px !important;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
+  padding: 16px !important;
 }
 
-/* ── Tab underline style ──────────────────────────────────────────────────── */
-.nav-underline .nav-link {
-  font-size: 13px !important;
-  font-weight: 500 !important;
-  color: #888888 !important;
-  padding: 10px 16px !important;
-  border-bottom: 2px solid transparent !important;
-}
+/* ── Plotly ───────────────────────────────────────────────────────────────── */
+.plotly .modebar { display: none !important; }
 
-.nav-underline .nav-link.active {
-  color: #111111 !important;
-  border-bottom-color: #2563EB !important;
-  font-weight: 600 !important;
+/* ── Mobile ───────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .controls-wrap { padding: 12px 14px 10px; }
+  .control-row   { flex-direction: column; gap: 8px; margin-bottom: 8px; }
+  .filter-row    { gap: 12px; }
+  .charts-wrap   { padding: 12px 14px; gap: 10px; }
+  .chart-card    { padding: 12px !important; }
 }
-
-.nav-underline .nav-link:hover {
-  color: #333333 !important;
-}
-
-/* ── Plotly modebar ───────────────────────────────────────────────────────── */
-.plotly .modebar { opacity: 0.3; transition: opacity 0.2s; }
-.plotly:hover .modebar { opacity: 1; }
 
 /* ── Scrollbar ────────────────────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #CCCCCC; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #AAAAAA; }

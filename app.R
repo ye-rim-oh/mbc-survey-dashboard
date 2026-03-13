@@ -6,7 +6,6 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(plotly)
-library(DT)
 library(readr)
 
 source("R/translations.R")
@@ -25,8 +24,7 @@ all_questions <- df_wide |>
 all_categories <- sort(unique(all_questions$keyword_en))
 
 # ── UI ────────────────────────────────────────────────────────────────────────
-ui <- bslib::page_sidebar(
-  title = 'What is your "Political Blood Type?"',
+ui <- bslib::page_fillable(
   theme = bslib::bs_theme(
     version      = 5,
     bg           = "#FAFAFA",
@@ -35,40 +33,73 @@ ui <- bslib::page_sidebar(
     base_font    = bslib::font_google("Inter"),
     heading_font = bslib::font_google("Inter")
   ),
-
   tags$head(tags$link(rel = "stylesheet", href = "styles.css")),
 
-  sidebar = bslib::sidebar(
-    width = 340,
-    bg    = "white",
-    open  = TRUE,
-    padding = "16px",
+  # ── Controls ────────────────────────────────────────────────────────────────
+  tags$div(
+    class = "controls-wrap",
 
-    tags$div(class = "sidebar-label", "Category"),
-    shiny::selectizeInput(
-      "sel_category",
-      label    = NULL,
-      choices  = c("All" = "", all_categories),
-      selected = "",
-      multiple = FALSE,
-      options  = list(placeholder = "All categories")
+    # Row 1: Category + Question
+    tags$div(
+      class = "control-row",
+      tags$div(
+        class = "control-col",
+        tags$label(class = "ctrl-label", "Category"),
+        shiny::selectizeInput(
+          "sel_category", label = NULL,
+          choices  = c("All categories" = "", all_categories),
+          selected = "",
+          options  = list(placeholder = "All categories")
+        )
+      ),
+      tags$div(
+        class = "control-col",
+        tags$label(class = "ctrl-label", "Question"),
+        shiny::selectizeInput(
+          "sel_question", label = NULL,
+          choices  = setNames(all_questions$question_en, all_questions$question_en),
+          selected = all_questions$question_en[1],
+          options  = list(placeholder = "Select a question")
+        )
+      )
     ),
 
-    tags$div(class = "sidebar-label", style = "margin-top:18px;", "Question"),
-    DT::DTOutput("question_table", height = "auto")
+    # Row 2: Age + Gender filters
+    tags$div(
+      class = "filter-row",
+      tags$div(
+        class = "filter-group",
+        tags$span(class = "ctrl-label", "Age"),
+        shiny::checkboxGroupInput(
+          "sel_age", label = NULL,
+          choices  = age_order,
+          selected = age_order,
+          inline   = TRUE
+        )
+      ),
+      tags$div(
+        class = "filter-group",
+        tags$span(class = "ctrl-label", "Gender"),
+        shiny::checkboxGroupInput(
+          "sel_gender", label = NULL,
+          choices  = c("Male", "Female"),
+          selected = c("Male", "Female"),
+          inline   = TRUE
+        )
+      )
+    )
   ),
 
-  bslib::navset_card_underline(
-    id     = "main_tabs",
-    height = "520px",
-    bslib::nav_panel("By Age Group",
-      plotly::plotlyOutput("plot_age", height = "460px")
+  # ── Charts ──────────────────────────────────────────────────────────────────
+  tags$div(
+    class = "charts-wrap",
+    bslib::card(
+      class = "chart-card",
+      plotly::plotlyOutput("plot_dist", height = "320px")
     ),
-    bslib::nav_panel("By Gender",
-      plotly::plotlyOutput("plot_gender", height = "460px")
-    ),
-    bslib::nav_panel("Score Heatmap",
-      plotly::plotlyOutput("plot_heatmap", height = "400px")
+    bslib::card(
+      class = "chart-card",
+      plotly::plotlyOutput("plot_score", height = "280px")
     )
   )
 )
@@ -76,58 +107,51 @@ ui <- bslib::page_sidebar(
 # ── Server ────────────────────────────────────────────────────────────────────
 server <- function(input, output, session) {
 
-  filtered_questions <- shiny::reactive({
-    if (is.null(input$sel_category) || input$sel_category == "") {
-      all_questions
+  # Update question choices when category changes
+  shiny::observeEvent(input$sel_category, {
+    qs <- if (is.null(input$sel_category) || input$sel_category == "") {
+      all_questions$question_en
     } else {
-      dplyr::filter(all_questions, keyword_en == input$sel_category)
+      dplyr::filter(all_questions, keyword_en == input$sel_category)$question_en
     }
+    shiny::updateSelectizeInput(session, "sel_question",
+      choices  = setNames(qs, qs),
+      selected = qs[1]
+    )
+  }, ignoreInit = TRUE)
+
+  selected_q <- shiny::reactive({
+    req(input$sel_question)
+    input$sel_question
   })
 
-  output$question_table <- DT::renderDT({
-    DT::datatable(
-      filtered_questions() |> dplyr::rename(Question = question_en, Category = keyword_en),
-      selection  = list(mode = "single", selected = 1),
-      rownames   = FALSE,
-      options    = list(
-        pageLength     = 36,
-        dom            = "t",
-        scrollY        = "62vh",
-        scrollCollapse = TRUE,
-        ordering       = FALSE,
-        columnDefs     = list(list(targets = 1, visible = FALSE))
-      ),
-      class = "compact hover"
+  sel_age    <- shiny::reactive({ req(input$sel_age);    input$sel_age    })
+  sel_gender <- shiny::reactive({ req(input$sel_gender); input$sel_gender })
+
+  q_wide_sel <- shiny::reactive({
+    dplyr::filter(df_wide,
+      question_en == selected_q(),
+      age_en      %in% sel_age(),
+      gender_en   %in% sel_gender()
     )
   })
 
-  selected_q <- shiny::reactive({
-    sel <- input$question_table_rows_selected
-    fq  <- filtered_questions()
-    if (is.null(sel) || length(sel) == 0) return(fq$question_en[1])
-    fq$question_en[sel]
-  })
-
-  q_wide_sel <- shiny::reactive({
-    dplyr::filter(df_wide, question_en == selected_q())
-  })
   q_long_sel <- shiny::reactive({
-    dplyr::filter(df_long, question_en == selected_q())
+    dplyr::filter(df_long,
+      question_en == selected_q(),
+      age_en      %in% sel_age(),
+      gender_en   %in% sel_gender()
+    )
   })
 
-  output$plot_age <- plotly::renderPlotly({
+  output$plot_dist <- plotly::renderPlotly({
     req(nrow(q_long_sel()) > 0)
-    make_age_chart(q_long_sel(), selected_q())
+    make_dist_chart(q_long_sel())
   })
 
-  output$plot_gender <- plotly::renderPlotly({
+  output$plot_score <- plotly::renderPlotly({
     req(nrow(q_wide_sel()) > 0)
-    make_gender_chart(q_wide_sel(), selected_q())
-  })
-
-  output$plot_heatmap <- plotly::renderPlotly({
-    req(nrow(q_wide_sel()) > 0)
-    make_heatmap(q_wide_sel(), selected_q())
+    make_score_chart(q_wide_sel())
   })
 }
 
