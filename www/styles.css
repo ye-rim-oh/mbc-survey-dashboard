@@ -67,18 +67,15 @@ body {
   padding: 10px 12px !important;
   background: #FAFAFA !important;
   min-height: 44px !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  flex-wrap: nowrap !important;
+  white-space: normal !important;
+  height: auto !important;
 }
 
 .selectize-input .item {
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  max-width: calc(100% - 24px) !important;
+  white-space: normal !important;
+  word-break: break-word !important;
   display: block !important;
+  line-height: 1.4 !important;
 }
 
 .selectize-input.focus {

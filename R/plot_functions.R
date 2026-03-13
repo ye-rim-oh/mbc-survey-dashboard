@@ -29,7 +29,7 @@ chart_theme <- function(base_size = 12) {
     plot.background    = ggplot2::element_rect(fill = "white", color = NA),
     strip.text         = ggplot2::element_text(size = base_size - 1, face = "bold",
                            color = "#333333"),
-    strip.background   = ggplot2::element_rect(fill = "#F5F5F7", color = NA),
+    strip.background   = ggplot2::element_blank(),
     legend.position    = "bottom",
     legend.title       = ggplot2::element_blank(),
     legend.text        = ggplot2::element_text(size = base_size - 2),
