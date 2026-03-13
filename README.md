@@ -1,6 +1,6 @@
-# MBC Survey 2025 — Social Values Dashboard
+# MBC Survey 2025 — What Is your "Political Blood Type"?
 
-An interactive Shiny dashboard exploring South Korean social values across age groups and genders, based on MBC's 2025 survey data.
+An interactive Shiny dashboard exploring South Korean social values across age groups and genders, based on MBC's Political Blood Type quiz response data.
 
 **Live app:** https://z25die-0-0.shinyapps.io/mbc-survey-dashboard/
 
