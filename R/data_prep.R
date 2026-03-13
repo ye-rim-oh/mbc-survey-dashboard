@@ -1,5 +1,4 @@
 # R/data_prep.R
-# Data loading and preparation for MBC Survey Dashboard
 
 source("R/translations.R")
 

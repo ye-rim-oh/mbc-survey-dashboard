@@ -1,14 +1,13 @@
 # R/plot_functions.R
-# Chart functions with Apple HIG color palette
 
 # ── Apple-inspired palette ────────────────────────────────────────────────────
 # Likert scale: Strongly Disagree -> Strongly Agree
 LIKERT_PALETTE <- c(
-  "Strongly Disagree" = "#FF453A",   # Apple Red
-  "Disagree"          = "#FF9F0A",   # Apple Orange
-  "Neutral"           = "#AEAEB2",   # Apple Gray
-  "Agree"             = "#30D158",   # Apple Green
-  "Strongly Agree"    = "#0071E3"    # Apple Blue
+  "Strongly Disagree" = "#C5705D",   # muted terracotta
+  "Disagree"          = "#D4A96A",   # muted amber
+  "Neutral"           = "#C7C7CC",   # soft gray
+  "Agree"             = "#6BAF8A",   # muted sage green
+  "Strongly Agree"    = "#5B8FBF"    # muted steel blue
 )
 
 GENDER_PALETTE <- c(
@@ -84,10 +83,10 @@ make_gender_chart <- function(q_wide, title) {
                         color = "#AEAEB2", linewidth = 0.4) +
     ggplot2::facet_wrap(~ age_en, nrow = 1) +
     ggplot2::scale_fill_manual(values = GENDER_PALETTE) +
-    ggplot2::scale_y_continuous(limits = c(1, 5),
-                                breaks = 1:5,
-                                labels = c("1\nStrongly\nDisagree","2","3\nNeutral","4","5\nStrongly\nAgree"),
-                                expand = ggplot2::expansion(mult = c(0, 0.05))) +
+    ggplot2::scale_y_continuous(limits = c(1, 5.2),
+                                breaks = c(1, 2, 3, 4, 5),
+                                labels = c("1", "2", "3 (Neutral)", "4", "5"),
+                                expand = ggplot2::expansion(mult = c(0, 0))) +
     ggplot2::labs(title = title,
                   subtitle = "Mean score by gender across age groups (dashed = neutral)",
                   y = "Mean Score (1–5)") +

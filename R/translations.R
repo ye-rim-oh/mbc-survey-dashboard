@@ -1,5 +1,4 @@
 # R/translations.R
-# Korean -> English translation lookup tables for MBC Survey Dashboard
 
 # ── Question translations ────────────────────────────────────────────────────
 question_en <- c(

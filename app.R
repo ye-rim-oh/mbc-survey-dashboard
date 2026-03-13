@@ -1,5 +1,4 @@
 # app.R — MBC Survey Dashboard
-# Apple-style UI | English labels | bslib + DT + plotly
 
 library(shiny)
 library(bslib)
@@ -74,7 +73,7 @@ ui <- bslib::page_sidebar(
 
   # ── Main panel ────────────────────────────────────────────────────────────
   bslib::card(
-    bslib::card_header("Selected Question"),
+    style = "padding: 10px 16px; margin-bottom: 10px;",
     shiny::uiOutput("question_detail")
   ),
 
@@ -141,11 +140,11 @@ server <- function(input, output, session) {
     q  <- selected_q()
     kw <- all_questions$keyword_en[all_questions$question_en == q][1]
     tags$div(
-      id = "question_detail",
-      tags$span(style = "font-size:12px; color:#86868B; font-weight:600;
+      style = "padding: 4px 0;",
+      tags$span(style = "font-size:11px; color:#86868B; font-weight:600;
                          text-transform:uppercase; letter-spacing:0.4px;
-                         display:block; margin-bottom:4px;", kw),
-      tags$span(style = "font-size:15px; font-weight:500; color:#1D1D1F;", q)
+                         display:inline; margin-right:8px;", paste0(kw, " ·")),
+      tags$span(style = "font-size:14px; font-weight:500; color:#1D1D1F;", q)
     )
   })
 

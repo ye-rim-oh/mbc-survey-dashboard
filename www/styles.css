@@ -161,14 +161,7 @@ table.dataTable thead th {
 
 /* ── Question detail card ───────────────────────────────────────────────────── */
 #question_detail {
-  font-size: 15px;
-  font-weight: 500;
-  color: #1D1D1F;
-  padding: 14px 16px;
-  background: #F2F2F7;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 /* ── Scrollbar styling ──────────────────────────────────────────────────────── */
