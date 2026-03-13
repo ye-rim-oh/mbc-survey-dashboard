@@ -53,13 +53,14 @@ make_dist_chart <- function(q_long) {
     ggplot2::scale_y_continuous(
       labels = function(x) paste0(x, "%"),
       expand = ggplot2::expansion(mult = c(0, 0.03))) +
-    ggplot2::labs(subtitle = "Response distribution (%)", y = "Percentage") +
+    ggplot2::labs(subtitle = "Response distribution (%)", y = "Percentage", fill = "") +
     chart_theme()
 
   plotly::ggplotly(p, tooltip = "text") |>
     plotly::layout(
-      legend = list(orientation = "h", y = -0.2, x = 0.5, xanchor = "center"),
-      margin = list(t = 10, b = 70, l = 50, r = 10)
+      legend = list(orientation = "h", y = -0.2, x = 0.5, xanchor = "center",
+                    title = list(text = "")),
+      margin = list(t = 10, b = 70, l = 50, r = 30)
     ) |>
     plotly::config(displayModeBar = FALSE)
 }
@@ -82,13 +83,14 @@ make_score_chart <- function(q_wide) {
       expand = ggplot2::expansion(mult = c(0, 0.05))) +
     ggplot2::coord_cartesian(ylim = c(1, 5.2)) +
     ggplot2::labs(subtitle = "Mean score  (1 = Strongly Disagree, 5 = Strongly Agree)",
-                  y = "Score") +
+                  y = "Score", fill = "") +
     chart_theme()
 
   plotly::ggplotly(p, tooltip = "text") |>
     plotly::layout(
-      legend = list(orientation = "h", y = -0.2, x = 0.5, xanchor = "center"),
-      margin = list(t = 10, b = 70, l = 60, r = 10)
+      legend = list(orientation = "h", y = -0.2, x = 0.5, xanchor = "center",
+                    title = list(text = "")),
+      margin = list(t = 10, b = 70, l = 60, r = 30)
     ) |>
     plotly::config(displayModeBar = FALSE)
 }

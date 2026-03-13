@@ -62,6 +62,17 @@ body {
   padding: 7px 10px !important;
   background: #FAFAFA !important;
   min-height: 36px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  flex-wrap: nowrap !important;
+}
+
+.selectize-input > * {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  max-width: 100% !important;
 }
 
 .selectize-input.focus {
