@@ -83,10 +83,10 @@ make_gender_chart <- function(q_wide, title) {
                         color = "#AEAEB2", linewidth = 0.4) +
     ggplot2::facet_wrap(~ age_en, nrow = 1) +
     ggplot2::scale_fill_manual(values = GENDER_PALETTE) +
-    ggplot2::scale_y_continuous(limits = c(1, 5.2),
-                                breaks = c(1, 2, 3, 4, 5),
-                                labels = c("1", "2", "3 (Neutral)", "4", "5"),
-                                expand = ggplot2::expansion(mult = c(0, 0))) +
+    ggplot2::scale_y_continuous(breaks = c(1, 2, 3, 4, 5),
+                                labels = c("1", "2", "3", "4", "5"),
+                                expand = ggplot2::expansion(mult = c(0, 0.05))) +
+    ggplot2::coord_cartesian(ylim = c(1, 5.2)) +
     ggplot2::labs(title = title,
                   subtitle = "Mean score by gender across age groups (dashed = neutral)",
                   y = "Mean Score (1–5)") +

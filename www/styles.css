@@ -1,171 +1,137 @@
-/* www/styles.css — Apple-inspired design for MBC Survey Dashboard */
+/* MBC Survey Dashboard — styles.css */
 
-/* ── Fonts & Base ─────────────────────────────────────────────────────────── */
-* {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
-               "Helvetica Neue", Arial, sans-serif;
-  box-sizing: border-box;
-}
+/* ── Base ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
-  background-color: #F5F5F7;
-  color: #1D1D1F;
-  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #FAFAFA;
+  color: #111111;
 }
 
-/* ── Page Title ────────────────────────────────────────────────────────────── */
-.navbar, .navbar-default {
+/* ── Page title bar ───────────────────────────────────────────────────────── */
+.navbar {
   background: #ffffff !important;
-  border-bottom: 1px solid #E5E5EA !important;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06) !important;
-}
-
-h1, h2, .app-title {
-  font-weight: 600;
-  letter-spacing: -0.3px;
-  color: #1D1D1F;
-}
-
-/* ── Sidebar ───────────────────────────────────────────────────────────────── */
-.bslib-sidebar-layout > .sidebar {
-  background-color: #F5F5F7 !important;
-  border-right: 1px solid #E5E5EA !important;
-  padding: 20px 16px !important;
-}
-
-.sidebar .sidebar-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: #86868B;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 12px;
-}
-
-/* ── Main Content ──────────────────────────────────────────────────────────── */
-.bslib-sidebar-layout > .main {
-  background-color: #F5F5F7 !important;
-  padding: 24px !important;
-}
-
-/* ── Cards ─────────────────────────────────────────────────────────────────── */
-.card, .bslib-card {
-  background: #ffffff !important;
-  border: none !important;
-  border-radius: 12px !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
-  padding: 20px !important;
-  margin-bottom: 16px !important;
-}
-
-.card-header, .bslib-card > .card-header {
-  background: transparent !important;
-  border-bottom: 1px solid #F2F2F7 !important;
-  font-weight: 600 !important;
-  font-size: 15px !important;
-  color: #1D1D1F !important;
-  padding: 0 0 12px 0 !important;
-  margin-bottom: 16px !important;
-}
-
-/* ── Tabs ───────────────────────────────────────────────────────────────────── */
-.nav-tabs {
-  border-bottom: 1px solid #E5E5EA !important;
-  margin-bottom: 20px;
-}
-
-.nav-tabs .nav-link {
-  color: #86868B !important;
-  border: none !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  padding: 8px 16px !important;
-  border-radius: 0 !important;
-  border-bottom: 2px solid transparent !important;
-}
-
-.nav-tabs .nav-link.active {
-  color: #0071E3 !important;
-  border-bottom: 2px solid #0071E3 !important;
-  background: transparent !important;
-}
-
-.nav-tabs .nav-link:hover {
-  color: #1D1D1F !important;
-}
-
-/* ── Form Controls ─────────────────────────────────────────────────────────── */
-.selectize-input {
-  border: 1px solid #D2D2D7 !important;
-  border-radius: 8px !important;
+  border-bottom: 1px solid #E8E8E8 !important;
   box-shadow: none !important;
-  font-size: 14px !important;
-  padding: 8px 12px !important;
+  padding: 0 24px !important;
+}
+
+.navbar-brand {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.2px !important;
+  color: #111111 !important;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────────────────────── */
+.bslib-sidebar-layout > .sidebar {
+  border-right: 1px solid #EBEBEB !important;
+  box-shadow: none !important;
+}
+
+.sidebar-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 7px;
+}
+
+/* ── selectize ────────────────────────────────────────────────────────────── */
+.selectize-input {
+  border: 1px solid #DCDCDC !important;
+  border-radius: 7px !important;
+  box-shadow: none !important;
+  font-size: 13px !important;
+  padding: 7px 10px !important;
+  background: #FAFAFA !important;
 }
 
 .selectize-input.focus {
-  border-color: #0071E3 !important;
-  box-shadow: 0 0 0 3px rgba(0,113,227,0.12) !important;
+  border-color: #2563EB !important;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.1) !important;
+  background: #ffffff !important;
 }
 
-label {
+.selectize-dropdown {
+  border: 1px solid #DCDCDC !important;
+  border-radius: 7px !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08) !important;
   font-size: 13px !important;
-  font-weight: 600 !important;
-  color: #1D1D1F !important;
-  margin-bottom: 6px !important;
-  display: block;
 }
 
-/* ── DT Table ───────────────────────────────────────────────────────────────── */
-.dataTables_wrapper {
-  font-size: 13px;
+/* ── DT table ─────────────────────────────────────────────────────────────── */
+.dataTables_wrapper { font-size: 13px; }
+
+table.dataTable {
+  border-collapse: collapse !important;
 }
 
 table.dataTable tbody tr {
   cursor: pointer;
-  transition: background 0.15s;
+  border-bottom: 1px solid #F2F2F2 !important;
+  transition: background 0.1s;
 }
 
-table.dataTable tbody tr:hover {
-  background-color: #F2F2F7 !important;
+table.dataTable tbody tr:hover td {
+  background: #F5F8FF !important;
 }
 
-table.dataTable tbody tr.selected {
-  background-color: #E8F0FE !important;
-  color: #0071E3 !important;
+table.dataTable tbody tr.selected td {
+  background: #EFF4FF !important;
+  color: #2563EB !important;
+  font-weight: 500 !important;
 }
 
 table.dataTable thead th {
-  font-size: 12px;
-  font-weight: 600;
-  color: #86868B;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-  border-bottom: 1px solid #E5E5EA !important;
-  background: transparent !important;
+  display: none !important;
 }
 
-.dataTables_info, .dataTables_paginate {
-  font-size: 12px;
-  color: #86868B;
+table.dataTable td {
+  padding: 8px 4px !important;
+  line-height: 1.4 !important;
+  border: none !important;
+  color: #333333;
 }
 
-/* ── Plot output ────────────────────────────────────────────────────────────── */
-.plotly .modebar {
-  opacity: 0.4;
-  transition: opacity 0.2s;
-}
-.plotly:hover .modebar {
-  opacity: 1;
+.dataTables_info,
+.dataTables_paginate { display: none; }
+
+/* ── Card (navset_card_underline) ─────────────────────────────────────────── */
+.card {
+  background: #ffffff !important;
+  border: 1px solid #EBEBEB !important;
+  border-radius: 10px !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
 }
 
-/* ── Question detail card ───────────────────────────────────────────────────── */
-#question_detail {
-  line-height: 1.4;
+/* ── Tab underline style ──────────────────────────────────────────────────── */
+.nav-underline .nav-link {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #888888 !important;
+  padding: 10px 16px !important;
+  border-bottom: 2px solid transparent !important;
 }
 
-/* ── Scrollbar styling ──────────────────────────────────────────────────────── */
-::-webkit-scrollbar { width: 6px; height: 6px; }
+.nav-underline .nav-link.active {
+  color: #111111 !important;
+  border-bottom-color: #2563EB !important;
+  font-weight: 600 !important;
+}
+
+.nav-underline .nav-link:hover {
+  color: #333333 !important;
+}
+
+/* ── Plotly modebar ───────────────────────────────────────────────────────── */
+.plotly .modebar { opacity: 0.3; transition: opacity 0.2s; }
+.plotly:hover .modebar { opacity: 1; }
+
+/* ── Scrollbar ────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #C7C7CC; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #AEAEB2; }
+::-webkit-scrollbar-thumb { background: #CCCCCC; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #AAAAAA; }

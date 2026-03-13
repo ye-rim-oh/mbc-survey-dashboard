@@ -278,7 +278,7 @@ All groups score "today's society is too sensitive about language" above 3.5 exc
 
 The same number, opposite grievances.
 
-### Theme B: Punitive Fairness
+### Theme B: Retributive Justice
 
 "Punishing wrongdoers feels satisfying" scores 3.93 overall — near-universally above neutral. This pairs with high scores for "fair treatment = first principle of legislation." Korean social values are not permissive; **justice is punitive and rule-based**, not rehabilitative.
 
@@ -290,9 +290,9 @@ Of all 36 questions, the gender wage gap has legitimate reasons shows the larges
 
 Virtually all groups strongly endorse "equal treatment" and "fair legislation" (4.0+), yet score "everyone earning the same = better world" at only 2.47. Equality is understood as **procedural** (equal rules), not **distributive** (equal outcomes).
 
-### Theme E: Nihilism is Young and Male
+### Theme E: Social Alienation is Young and Male
 
-Destructive impulse items score highest among young males, though still low in absolute terms:
+Social alienation items score highest among young males, though still low in absolute terms:
 
 | Item | 20s M | 70s M | Gap |
 |------|-------|-------|-----|
@@ -304,15 +304,19 @@ This is a signal worth watching — not a crisis, but a persistent undercurrent 
 
 ---
 
-## 6. Suggested Reframings
+## 6. Conclusion
 
-| Original Category | Suggested Label | Rationale |
-|-------------------|----------------|-----------|
-| 평등 (Equality) | Procedural Equality | Items measure process fairness, not outcome equality |
-| 과민성 (Hypersensitivity) | Discourse Norm Resistance | More accurate than pathologising sensitivity |
-| 파괴욕구 (Destructive Desire) | Social Alienation | Structural alienation better explains the pattern |
-| 보상 (Compensation) | Generational & Class Grievance | Items capture relative deprivation, not just reward |
-| 처벌쾌감 (Punitive Pleasure) | Retributive Justice | Less pejorative; reflects a coherent justice philosophy |
+South Korean social values in 2025 resist easy left–right mapping. What emerges instead is a tension between two registers that coexist across almost every demographic cell: a strong, near-universal commitment to **procedural fairness** (equal rules, fair legislation, intergenerational responsibility), and deep disagreement over what that fairness *implies* for gender roles, redistribution, and minority protection.
+
+The generational divide is sharpest where the least political: traditional family expectations — motherhood, marriage, childbearing as obligation — separate 20s from 70s by more than a full scale point, while attitudes toward abstract equality or law barely differ. The gender divide is sharpest where it is most empirical: not "should women be equal" (consensus: yes) but "does the wage gap reflect legitimate differences" (20s men say yes; 20s women say no, gap: +1.06).
+
+Three patterns cut across all groups and age:
+
+1. **Fairness is procedural, not distributive.** Equal rules score 4.0+; equal outcomes score below 2.5. Any policy framed as redistribution faces resistance regardless of age or gender.
+2. **Justice is retributive.** Punishing wrongdoers feels good to nearly everyone. This is not cruelty — it is a coherent rule-based moral psychology that values consequences and accountability.
+3. **Discourse norms are contested everywhere.** "Society is too sensitive about language" is a near-consensus item, but the underlying frustrations are demographically opposite. The same score means different things in different mouths.
+
+The one genuinely alarming signal — social alienation among young men — remains subdued in absolute terms. It is not a crisis. But the combination of generational & class grievance (feeling under-compensated), anti-PC discourse frustration, and mild nihilistic ideation in the same demographic cohort is worth continued observation.
 
 ---
 

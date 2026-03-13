@@ -50,15 +50,15 @@ keyword_en <- c(
   "능력주의"   = "Meritocracy",
   "물질주의"   = "Materialism",
   "미래"       = "Intergenerational Responsibility",
-  "보상"       = "Perceived Reward Fairness",
+  "보상"       = "Generational & Class Grievance",
   "약자보호"   = "Protection of the Vulnerable",
   "연민"       = "Compassion",
   "전통"       = "Tradition & Custom",
   "젠더"       = "Gender & Family Roles",
   "차별금지"   = "Anti-Discrimination",
-  "처벌쾌감"   = "Punitive Satisfaction",
-  "파괴욕구"   = "Destructive Impulses",
-  "평등"       = "Equality & Fairness",
+  "처벌쾌감"   = "Retributive Justice",
+  "파괴욕구"   = "Social Alienation",
+  "평등"       = "Procedural Equality",
   "훈육"       = "Discipline & Order"
 )
 
