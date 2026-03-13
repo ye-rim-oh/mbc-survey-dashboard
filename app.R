@@ -17,11 +17,8 @@ df_wide       <- survey$wide
 df_long       <- survey$long
 
 all_questions <- df_wide |>
-  dplyr::select(question_en, keyword_en) |>
-  dplyr::distinct() |>
-  dplyr::arrange(keyword_en, question_en)
-
-all_categories <- sort(unique(all_questions$keyword_en))
+  dplyr::distinct(question_en) |>
+  dplyr::arrange(question_en)
 
 # ── UI ────────────────────────────────────────────────────────────────────────
 ui <- bslib::page_fillable(
@@ -39,19 +36,9 @@ ui <- bslib::page_fillable(
   tags$div(
     class = "controls-wrap",
 
-    # Row 1: Category + Question
+    # Row 1: Question
     tags$div(
       class = "control-row",
-      tags$div(
-        class = "control-col",
-        tags$label(class = "ctrl-label", "Category"),
-        shiny::selectizeInput(
-          "sel_category", label = NULL,
-          choices  = c("All categories" = "", all_categories),
-          selected = "",
-          options  = list(placeholder = "All categories")
-        )
-      ),
       tags$div(
         class = "control-col",
         tags$label(class = "ctrl-label", "Question"),
@@ -106,20 +93,6 @@ ui <- bslib::page_fillable(
 
 # ── Server ────────────────────────────────────────────────────────────────────
 server <- function(input, output, session) {
-
-  # Update question choices when category changes
-  shiny::observeEvent(input$sel_category, {
-    qs <- if (is.null(input$sel_category) || input$sel_category == "") {
-      all_questions$question_en
-    } else {
-      dplyr::filter(all_questions, keyword_en == input$sel_category)$question_en
-    }
-    shiny::updateSelectizeInput(session, "sel_question",
-      choices  = setNames(qs, qs),
-      selected = qs[1]
-    )
-  }, ignoreInit = TRUE)
-
   selected_q <- shiny::reactive({
     req(input$sel_question)
     input$sel_question

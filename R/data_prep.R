@@ -11,17 +11,16 @@ load_survey_data <- function() {
 
   # Standardise column names
   names(df) <- c("question_kr", "age_kr", "gender", "pct_sd", "pct_d",
-                 "pct_n", "pct_a", "pct_sa", "keyword_kr")
+                 "pct_n", "pct_a", "pct_sa", "drop_col")
+  df <- dplyr::select(df, -drop_col)
 
   # Translate labels
   df$question_en <- question_en[df$question_kr]
-  df$keyword_en  <- keyword_en[df$keyword_kr]
   df$age_en      <- age_en[df$age_kr]
   df$gender_en   <- gender_en[df$gender]
 
   # Fallback: keep Korean if translation is missing
   df$question_en <- ifelse(is.na(df$question_en), df$question_kr, df$question_en)
-  df$keyword_en  <- ifelse(is.na(df$keyword_en),  df$keyword_kr,  df$keyword_en)
   df$age_en      <- ifelse(is.na(df$age_en),      df$age_kr,      df$age_en)
 
   # Ordered factor for age
@@ -29,8 +28,11 @@ load_survey_data <- function() {
 
   # Weighted mean score (1=Strongly Disagree … 5=Strongly Agree)
   total <- df$pct_sd + df$pct_d + df$pct_n + df$pct_a + df$pct_sa
+  df$raw_total_pct <- total
+  response_cols <- c("pct_sd", "pct_d", "pct_n", "pct_a", "pct_sa")
+  df[response_cols] <- lapply(df[response_cols], function(x) x / total * 100)
   df$mean_score <- (1*df$pct_sd + 2*df$pct_d + 3*df$pct_n +
-                    4*df$pct_a + 5*df$pct_sa) / total
+                    4*df$pct_a + 5*df$pct_sa) / 100
 
   # Long-form response percentages (for stacked/grouped bar charts)
   df_long <- tidyr::pivot_longer(

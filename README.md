@@ -16,19 +16,17 @@ An interactive Shiny dashboard exploring South Korean social values across age g
 | age_group | Age group: 20s–70s |
 | gender | Gender: M / W |
 | strongly_disagree ~ strongly_agree | 5-point Likert response percentages |
-| keyword | Thematic category |
 
 Each row contains the **percentage distribution** of responses for one question × age × gender cell. Scores are computed as weighted means on a 1–5 scale (1 = Strongly Disagree, 5 = Strongly Agree).
 
-The 36 questions span 17 thematic categories including Meritocracy, Gender & Family Roles, Equality & Fairness, Destructive Impulses, Climate Policy, and Anti-Discrimination.
 
 ---
 
 ## Dashboard Usage
 
-**Sidebar**
-- Filter questions by category using the dropdown
-- Click any row in the question table to select it
+**Controls**
+- Select a question
+- Filter by age and gender
 
 **Tabs**
 | Tab | Chart |
