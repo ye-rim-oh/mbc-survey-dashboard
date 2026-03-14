@@ -1,7 +1,9 @@
-# MBC Survey 2025 — What Is your "Political Blood Type"?
-**Data:** MBC Political Blood Type quiz respondents (36 questions × 6 age groups × 2 genders)
-**Scale:** 1 = Strongly Disagree · 3 = Neutral · 5 = Strongly Agree
-**Groups:** 20s–70s × Male/Female
+# MBC Survey 2025 — What Is your "Political Blood Type"?-
+- **Data:** MBC Political Blood Type quiz respondents (36 questions × 6 age groups × 2 genders)
+
+- **Scale:** 1 = Strongly Disagree · 3 = Neutral · 5 = Strongly Agree
+
+- **Groups:** 20s–70s × Male/Female
 
 ---
 
