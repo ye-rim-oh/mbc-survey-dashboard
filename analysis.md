@@ -16,8 +16,8 @@
 | 4.12 | We must leave a better world for the next generation |
 | 4.11 | Fair treatment should be the first principle of legislation |
 | 4.01 | Caring for the weak and vulnerable is important |
-| 3.95 | Today's society is too sensitive about language |
-| 3.93 | Punishing wrongdoers feels satisfying |
+| 3.95 | Our society these days tends to overreact even to a single word |
+| 3.93 | It feels good when wrongdoers are caught and punished |
 
 All groups converge on legal fairness and intergenerational responsibility. The language sensitivity score cuts across age and gender, though the grievance behind the number differs sharply by group — more on that in §5A. That convergence may be less reassuring than it looks: Jung and Clifford (2025) show that moral values can be substantially more politically divisive than non-moral ones, because the same nominal commitment can encode irreconcilable underlying meanings. A population that agrees on "fairness" in the abstract can still fracture over what fairness requires.
 
@@ -27,9 +27,9 @@ All groups converge on legal fairness and intergenerational responsibility. The 
 |-------|-----------|
 | 1.74 | I feel a thrill at natural disasters in other countries |
 | 1.76 | I think society needs to completely collapse |
-| 1.79 | I feel the urge to destroy beautiful things |
-| 2.00 | I imagine most of humanity disappearing |
-| 2.32 | Society's institutions should be torn down and rebuilt |
+| 1.79 | I sometimes feel the urge to destroy beautiful things |
+| 2.00 | I sometimes imagine most of humanity disappearing, leaving only a few to start over |
+| 2.32 | Since we cannot fix social institutions, they must be torn down and rebuilt from scratch |
 
 Nihilistic and destructive impulses register near-zero across almost every cell. The absolute scores are low. Still, they run consistently higher among younger males and tend to cluster with other alienation signals in the same cohort (§5E).
 
@@ -40,12 +40,12 @@ Nihilistic and destructive impulses register near-zero across almost every cell.
 | Gap (70s − 20s) | Direction | Statement |
 |-----------------|-----------|-----------|
 | **+1.53** | Older ↑ | Having children is a social obligation |
-| **+1.29** | Older ↑ | Women should prioritize family and children |
+| **+1.29** | Older ↑ | Work is fine, but women should prioritize family and children |
 | **+1.10** | Older ↑ | Children suffer when mothers work |
-| **+0.75** | Older ↑ | Compassion and sympathy are the most important human virtues |
-| **+0.69** | Older ↑ | We need a strong leader to suppress extremism |
-| **−0.86** | Younger ↑ | Going abroad instead of ancestral rites on holidays is acceptable |
-| **−0.76** | Younger ↑ | Marriage is a personal choice |
+| **+0.75** | Older ↑ | Compassion and sympathy for those who suffer are the most important human virtues |
+| **+0.69** | Older ↑ | We need a strong leader to suppress the extremism that is ruining our country |
+| **−0.86** | Younger ↑ | Going abroad on holiday breaks without holding memorial rites is not something to be criticized |
+| **−0.76** | Younger ↑ | Marriage is not an obligation — it is a personal choice |
 | **−0.68** | Younger ↑ | Success sometimes requires pushing others down |
 
 Traditional family expectations separate the 20s from the 70s by more than a full scale point: having children as an obligation, the assumed tension between women's careers and family. Abstract commitments to equality or legal fairness barely shift. The real divide is about family norms, not political ideology.
@@ -65,10 +65,10 @@ Younger cohorts are more individualistic about marriage and personal success, bu
 | **+0.66** | Higher | Lower | The gender wage gap has legitimate reasons |
 | **+0.44** | Higher | Lower | Having children is a social obligation |
 | **+0.25** | Higher | Lower | Success sometimes requires pushing others down |
-| **+0.22** | Higher | Lower | Advocates for the vulnerable display uncomfortable moral superiority |
-| **+0.20** | Higher | Lower | Women should prioritize family and children |
-| **−0.30** | Lower | Higher | Marriage is a personal choice |
-| **−0.26** | Lower | Higher | Going abroad instead of ancestral rites is acceptable |
+| **+0.22** | Higher | Lower | I feel uncomfortable with the moral superiority of those who advocate for minorities and the vulnerable |
+| **+0.20** | Higher | Lower | Work is fine, but women should prioritize family and children |
+| **−0.30** | Lower | Higher | Marriage is not an obligation — it is a personal choice |
+| **−0.26** | Lower | Higher | Going abroad instead of memorial rites on holiday breaks is not something to be criticized |
 
 Men score higher on items that justify existing gender arrangements; women score higher on personal autonomy. The pattern holds across all age groups, though the wage gap disagreement narrows in older cohorts.
 
@@ -82,7 +82,7 @@ Why that split runs so deep in Korea specifically has an institutional dimension
 
 ### 20s Male — "Anti-PC, meritocratic, frustrated"
 
-Top scores: today's society is too sensitive about language (**3.97**, highest of any group on this item), marriage is a personal choice (3.90), punishing wrongdoers feels satisfying (3.89).
+Top scores: our society these days tends to overreact even to a single word (**3.97**, highest of any group on this item), marriage is a personal choice (3.90), it feels good when wrongdoers are caught and punished (3.89).
 
 Discourse frustration defines the profile, not nihilism — the nihilism scores are low. On the gender wage gap, 20s males score 3.31 vs. 20s females at 2.13, a within-cohort gap of +1.18 and the largest in the data. They are skeptical of redistribution but not of fairness itself. The grievance is about inconsistent rule application.
 
@@ -92,11 +92,11 @@ This disposition doesn't exist in an economic vacuum. Lee (2025) argues that emp
 
 ### 20s Female — "Autonomy-forward, structurally aware"
 
-Top scores: marriage is a personal choice (**4.33**, highest of any group), today's society is too sensitive about language (3.93), going abroad instead of ancestral rites is acceptable (3.91).
+Top scores: marriage is a personal choice (**4.33**, highest of any group), our society these days tends to overreact even to a single word (3.93), going abroad instead of memorial rites on holiday breaks is not something to be criticized (3.91).
 
 Bottom scores: having children is a social obligation (**2.07**), society needs to completely collapse (1.91), feel the urge to destroy beautiful things (1.77).
 
-This group most firmly rejects traditional family obligations. They support anti-discrimination legislation at 3.42 and climate regulations at 3.70. What is less obvious: their score on "advocates for the vulnerable display uncomfortable moral superiority" is 2.72, only slightly below 20s males at 2.95. The anti-PC position is shared across young cohorts; the underlying politics are not.
+This group most firmly rejects traditional family obligations. They support anti-discrimination legislation at 3.42 and climate regulations at 3.70. What is less obvious: their score on "I feel uncomfortable with the moral superiority of those who advocate for minorities and the vulnerable" is 2.72, only slightly below 20s males at 2.95. The anti-PC position is shared across young cohorts; the underlying politics are not.
 
 The 20s female profile is not a mirror image of 20s male grievance. Go (2025) suggests that because women's political mobilization in Korea developed largely outside party structures, the resulting politics of self-determination took shape in civil society rather than in formal channels. The scores support that reading: marriage as personal choice (4.33), climate regulation (3.70), near-total rejection of family obligation (2.07) — a profile organized around self-determination rather than party-mediated reform. The shared anti-PC score masks opposite targets: for this group, restrictive speech norms are experienced as constraints on feminist expression, not as pro-feminist overcorrection.
 
@@ -104,7 +104,7 @@ The 20s female profile is not a mirror image of 20s male grievance. Go (2025) su
 
 ### 30s Male — "Pragmatic meritocrat"
 
-Top scores: today's society is too sensitive about language (3.96), marriage is a personal choice (3.93), fair treatment as the first principle of legislation (3.92).
+Top scores: our society these days tends to overreact even to a single word (3.96), marriage is a personal choice (3.93), fair treatment as the first principle of legislation (3.92).
 
 The profile is close to 20s males but slightly more institutionally oriented. Gender wage gap: 3.26 vs. 30s females at 2.67. Marginally more accepting of traditional gender roles than the younger cohort.
 
@@ -112,7 +112,7 @@ The profile is close to 20s males but slightly more institutionally oriented. Ge
 
 ### 30s Female — "Values-consistent, punitive fairness"
 
-Top scores: marriage is a personal choice (4.29), punishing wrongdoers feels satisfying (**4.05**, among the highest of any group on this item), adolescents need more discipline (3.99).
+Top scores: marriage is a personal choice (4.29), it feels good when wrongdoers are caught and punished (**4.05**, among the highest of any group on this item), adolescents need more discipline (3.99).
 
 Retributive justice at 4.05 alongside strong procedural fairness norms is an unusual combination. Having children as a social obligation scores 2.09 — lower than 20s women.
 
@@ -186,13 +186,13 @@ Having children as a social obligation: 3.24 — notably lower than 70s males (3
 
 ### The "anti-PC" consensus that isn't
 
-Every group except 70s females (3.46) scores "today's society is too sensitive about language" above 3.5. The number looks like consensus. Young males are responding to what they see as pro-feminist or minority-protective speech norms. Young females are responding to backlash against their own speech. Older groups are reacting to the pace of discursive change. The same score, different grievances.
+Every group except 70s females (3.46) scores "our society these days tends to overreact even to a single word" above 3.5. The number looks like consensus. Young males are responding to what they see as pro-feminist or minority-protective speech norms. Young females are responding to backlash against their own speech. Older groups are reacting to the pace of discursive change. The same score, different grievances.
 
 Jung and Clifford (2025) offer a mechanism for this surface convergence: when values are moralized — framed as matters of right and wrong rather than preference — disagreement produces stronger affective division than partisan conflict alone. Each group's anti-PC sentiment is moralized differently. For young males, the grievance is framed as procedural fairness: speech norms that treat one group's expression as more legitimate violate the equal-treatment norm they score at 4.0+. For young females, the anti-PC score reflects resistance to restrictions on feminist speech — also a fairness claim. The number is the same; the moral foundation is inverted.
 
 ### Retributive justice
 
-"Punishing wrongdoers feels satisfying" scores 3.93 overall, near-universally above neutral, alongside high scores for legal fairness. Justice in this data is punitive and rule-based. That is not pathology — it is a coherent moral position held broadly and consistently.
+"It feels good when wrongdoers are caught and punished" scores 3.93 overall, near-universally above neutral, alongside high scores for legal fairness. Justice in this data is punitive and rule-based. That is not pathology — it is a coherent moral position held broadly and consistently.
 
 Hall and Kim (2024) draw a distinction between *personal* unfairness — the sense that rules have been applied unequally to oneself — and *social* unfairness — the sense that the system produces unjust outcomes for society as a whole. Personal unfairness drives support for right-wing populism and punitive justice; social unfairness drives redistribution demands. The near-universal retributive justice score here, combined with high procedural fairness and low redistribution support (§5D), maps broadly onto Hall and Kim's personal-unfairness pathway: the moral demand is for equal rule application, not structural correction.
 
