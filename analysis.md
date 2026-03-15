@@ -65,10 +65,10 @@ Younger cohorts are more individualistic about marriage and personal success, bu
 | **+0.66** | Higher | Lower | The gender wage gap has legitimate reasons |
 | **+0.44** | Higher | Lower | Having children is a social obligation |
 | **+0.25** | Higher | Lower | Success sometimes requires pushing others down |
-| **+0.22** | Higher | Lower | I feel uncomfortable with the moral superiority of those who advocate for minorities and the vulnerable |
+| **+0.22** | Higher | Lower | I feel uncomfortable with the moral superiority of those who advocate for minorities and the vulnerable, such as LGBTQ individuals, migrant workers, and people with disabilities |
 | **+0.20** | Higher | Lower | Work is fine, but women should prioritize family and children |
 | **−0.30** | Lower | Higher | Marriage is not an obligation — it is a personal choice |
-| **−0.26** | Lower | Higher | Going abroad instead of memorial rites on holiday breaks is not something to be criticized |
+| **−0.26** | Lower | Higher | Going abroad on holiday breaks instead of holding memorial rites is not something to be criticized |
 
 Men score higher on items that justify existing gender arrangements; women score higher on personal autonomy. The pattern holds across all age groups, though the wage gap disagreement narrows in older cohorts.
 
@@ -96,7 +96,7 @@ Top scores: marriage is a personal choice (**4.33**, highest of any group), our 
 
 Bottom scores: having children is a social obligation (**2.07**), society needs to completely collapse (1.91), feel the urge to destroy beautiful things (1.77).
 
-This group most firmly rejects traditional family obligations. They support anti-discrimination legislation at 3.42 and climate regulations at 3.70. What is less obvious: their score on "I feel uncomfortable with the moral superiority of those who advocate for minorities and the vulnerable" is 2.72, only slightly below 20s males at 2.95. The anti-PC position is shared across young cohorts; the underlying politics are not.
+This group most firmly rejects traditional family obligations. They support anti-discrimination legislation at 3.42 and climate regulations at 3.70. What is less obvious: their score on "I feel uncomfortable with the moral superiority of those who advocate for groups like LGBTQ individuals, migrant workers, and people with disabilities" is 2.72, only slightly below 20s males at 2.95. The anti-PC position is shared across young cohorts; the underlying politics are not.
 
 The 20s female profile is not a mirror image of 20s male grievance. Go (2025) suggests that because women's political mobilization in Korea developed largely outside party structures, the resulting politics of self-determination took shape in civil society rather than in formal channels. The scores support that reading: marriage as personal choice (4.33), climate regulation (3.70), near-total rejection of family obligation (2.07) — a profile organized around self-determination rather than party-mediated reform. The shared anti-PC score masks opposite targets: for this group, restrictive speech norms are experienced as constraints on feminist expression, not as pro-feminist overcorrection.
 
@@ -186,7 +186,7 @@ Having children as a social obligation: 3.24 — notably lower than 70s males (3
 
 ### The "anti-PC" consensus that isn't
 
-Every group except 70s females (3.46) scores "our society these days tends to overreact even to a single word" above 3.5. The number looks like consensus. Young males are responding to what they see as pro-feminist or minority-protective speech norms. Young females are responding to backlash against their own speech. Older groups are reacting to the pace of discursive change. The same score, different grievances.
+Every group except 70s females (3.46) scores "our society these days tends to overreact even to a single word" above 3.5. The number looks like consensus. Young males are responding to what they see as speech norms that protect specific groups — LGBTQ individuals, migrant workers, people with disabilities — at the expense of open expression. Young females are responding to backlash against their own speech. Older groups are reacting to the pace of discursive change. The same score, different grievances.
 
 Jung and Clifford (2025) offer a mechanism for this surface convergence: when values are moralized — framed as matters of right and wrong rather than preference — disagreement produces stronger affective division than partisan conflict alone. Each group's anti-PC sentiment is moralized differently. For young males, the grievance is framed as procedural fairness: speech norms that treat one group's expression as more legitimate violate the equal-treatment norm they score at 4.0+. For young females, the anti-PC score reflects resistance to restrictions on feminist speech — also a fairness claim. The number is the same; the moral foundation is inverted.
 
@@ -198,13 +198,13 @@ Hall and Kim (2024) draw a distinction between *personal* unfairness — the sen
 
 ### The gender wage gap — the sharpest fracture
 
-Of 36 questions, the gender wage gap item produces the largest within-cohort gap in the 20s (+1.18) and the largest mean gender gap overall (+0.66). The disagreement is empirical: is the pay difference the result of legitimate factors, or structural discrimination? Men and women in the same cohort have fundamentally different answers.
+Of 36 questions, the gender wage gap item produces the largest within-cohort gap in the 20s (+1.18) and the largest mean gender gap overall (+0.66). The disagreement is empirical: is the pay difference the result of legitimate factors, or structural discrimination? Men and women in the same cohort have fundamentally different answers. Note that the survey item on hierarchy — "there are people who are, relatively speaking, superior to others" — scores below neutral across all groups (mean 2.66), suggesting the disagreement is not about believing in fixed human hierarchies but about the interpretation of specific outcomes.
 
 The factual dispute about the wage gap is itself politically constituted. Lee (2025) shows that among young Korean men, skepticism about structural gender discrimination is not an outlier position but a majority-held view that clusters with conservative political identity. Men score 3.31 on this item, women score 2.13. That gap reflects not a difference in information but a difference in causal models: legitimate sorting versus structural discrimination. Go (2025) connects this to institutional weakness — without party-based representation of women's interests, the structural account of gender inequality lacks political champions who would normalize it in mainstream discourse.
 
 ### Equality in principle, redistribution in practice
 
-Groups scoring 4.0+ on equal treatment and fair legislation score below 2.5 on "the world would be better if everyone earned the same." Equality is procedural — equal rules, not equal outcomes. Arguments framed around redistribution face a harder road than arguments framed around consistent rule application.
+Groups scoring 4.0+ on equal treatment and fair legislation score below 2.5 on "the world would be better if everyone earned the same." Equality is procedural — equal rules, not equal outcomes. The equal-treatment items that score highest are notable for their universalism: "treating everyone fairly, even people I don't know" scores above 3.8 across all groups, extending moral concern beyond personal networks. Yet the same respondents resist equalizing outcomes. Arguments framed around redistribution face a harder road than arguments framed around consistent rule application.
 
 This redistribution gap has structural correlates. Cusack, Iversen, and Rehm (2006) show that redistribution preferences are driven by exposure to labor market risk: workers with specific, non-transferable skills and high unemployment risk support redistribution most strongly. Korea's credentials-heavy labor market produces relatively low skill specificity — closer to general-skills economies than to vocational-training systems like Germany's — which structurally dampens redistribution demand even when material inequality is high. Hajdu (2025) adds a perceptual dimension: perceived unfairness reduces subjective social status more sharply than perceived inequality does. The two seem to work as distinct psychological channels. If that distinction holds politically, it helps explain why respondents score 4.0+ on equal treatment but below 2.5 on equal outcomes — the operative grievance is unfair process, not unequal distribution, and redistribution arguments do not address it.
 
