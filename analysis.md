@@ -19,7 +19,7 @@
 | 3.95 | Today's society is too sensitive about language |
 | 3.93 | Punishing wrongdoers feels satisfying |
 
-Respondents across all demographics converge on legal fairness and intergenerational responsibility. The language sensitivity score cuts across age and gender, though the grievance behind the number differs sharply by group — more on that in §5A. That convergence may be less reassuring than it looks: Jung and Clifford (2025) show that moral values can be substantially more politically divisive than non-moral ones, because the same nominal commitment can encode irreconcilable underlying meanings. A population that agrees on "fairness" in the abstract can still fracture over what fairness requires.
+All groups converge on legal fairness and intergenerational responsibility. The language sensitivity score cuts across age and gender, though the grievance behind the number differs sharply by group — more on that in §5A. That convergence may be less reassuring than it looks: Jung and Clifford (2025) show that moral values can be substantially more politically divisive than non-moral ones, because the same nominal commitment can encode irreconcilable underlying meanings. A population that agrees on "fairness" in the abstract can still fracture over what fairness requires.
 
 ### Least agreed-upon (near-universal rejection)
 
@@ -50,9 +50,9 @@ Nihilistic and destructive impulses register near-zero across almost every cell.
 
 Traditional family expectations separate the 20s from the 70s by more than a full scale point: having children as an obligation, the assumed tension between women's careers and family. Abstract commitments to equality or legal fairness barely shift. The real divide is about family norms, not political ideology.
 
-Go (2025) offers a structural explanation for why family norms diverge so sharply across generations while abstract equality does not. South Korea's democratization path did less to institutionalize gender equality through party structures than comparable transitions elsewhere: progressive political identity consolidated around procedural commitments without anchoring family and gender reform in formal institutions. That decoupling is consistent with the data here — a +1.53-point generational gap on childbearing obligation alongside near-zero movement on procedural fairness.
+Go (2025) offers a structural explanation for why family norms diverge so sharply across generations while abstract equality does not. South Korea's democratization path did less to institutionalize gender equality through party structures than comparable transitions elsewhere: progressive political identity consolidated around procedural commitments without anchoring family and gender reform in formal institutions. The data bears that out — a +1.53-point generational gap on childbearing obligation alongside near-zero movement on procedural fairness.
 
-Younger cohorts are more individualistic about marriage and personal success, but not more permissive about destructive behavior. Older groups score higher on compassion and abstract pro-social values. That's more consistent with life-course accumulation than a generational difference — these values appear to grow with age, not to belong to one era.
+Younger cohorts are more individualistic about marriage and personal success, but not more permissive about destructive behavior. Older groups score higher on compassion and abstract pro-social values. This looks more like life-course accumulation than a cohort effect — values that seem to grow with age rather than belong to one era.
 
 ---
 
@@ -72,9 +72,9 @@ Younger cohorts are more individualistic about marriage and personal success, bu
 
 Men score higher on items that justify existing gender arrangements; women score higher on personal autonomy. The pattern holds across all age groups, though the wage gap disagreement narrows in older cohorts.
 
-The 20s cohort's +1.18 within-group gap on the wage item does not occur in isolation. Lee (2025) documents a substantial gender gap among young voters in the 2022 presidential election, with attitudes toward feminist policy an important part of that divide. The disagreement over the wage gap in this survey reflects the same underlying fracture: not a debate about equal pay in the abstract, but about whether existing disparities are legitimate outcomes of a fair process.
+The 20s cohort's +1.18 within-group gap on the wage item doesn't stand alone. Lee (2025) documents a substantial gender gap among young voters in the 2022 presidential election, with attitudes toward feminist policy an important part of that divide. The disagreement over the wage gap in this survey reflects the same underlying split: not a debate about equal pay in the abstract, but about whether existing disparities are legitimate outcomes of a fair process.
 
-Why the fracture runs so deep in Korea specifically has an institutional dimension. Go (2025) argues that in Taiwan, competitive party politics gave parties stronger incentives to recruit women elites and incorporate gender issues into their platforms. In South Korea, women's political mobilization remained largely outside party structures, leaving gender equality with a weaker institutional anchor in the party system. The persistence of the gender gap in this survey — not narrowing even as abstract equality scores converge — is consistent with that comparative pattern.
+Why that split runs so deep in Korea specifically has an institutional dimension. Go (2025) argues that competitive party politics in Taiwan gave parties stronger incentives to recruit women elites and incorporate gender issues into their platforms. South Korean women's political mobilization remained largely outside party structures, which left gender equality without a firm anchor in the party system. That the gender gap shows no sign of narrowing here, even as abstract equality scores converge, fits that picture.
 
 ---
 
@@ -86,7 +86,7 @@ Top scores: today's society is too sensitive about language (**3.97**, highest o
 
 Discourse frustration defines the profile, not nihilism — the nihilism scores are low. On the gender wage gap, 20s males score 3.31 vs. 20s females at 2.13, a within-cohort gap of +1.18 and the largest in the data. They are skeptical of redistribution but not of fairness itself. The grievance is about inconsistent rule application.
 
-The anti-PC, meritocratic disposition of this cohort sits within a broader context of economic strain. Lee (2025) argues that employment insecurity and the burden of family formation have heightened some young men's receptivity to anti-feminist framing: when meritocratic expectation meets constrained opportunity, feminist policy can appear as an unfair advantage granted to a competitor. The survey pattern here — high meritocracy scores, high anti-PC scores, low redistribution support — is consistent with that account.
+This disposition doesn't exist in an economic vacuum. Lee (2025) argues that employment insecurity and the burden of family formation have heightened some young men's receptivity to anti-feminist framing: when meritocratic expectation meets constrained opportunity, feminist policy can appear as an unfair advantage granted to a competitor. That profile — high meritocracy scores, high anti-PC scores, low redistribution support — fits.
 
 ---
 
@@ -98,7 +98,7 @@ Bottom scores: having children is a social obligation (**2.07**), society needs 
 
 This group most firmly rejects traditional family obligations. They support anti-discrimination legislation at 3.42 and climate regulations at 3.70. What is less obvious: their score on "advocates for the vulnerable display uncomfortable moral superiority" is 2.72, only slightly below 20s males at 2.95. The anti-PC position is shared across young cohorts; the underlying politics are not.
 
-The 20s female profile is not a mirror image of 20s male grievance. Go (2025) suggests that because women's political mobilization in Korea developed largely outside party structures, the resulting politics of self-determination took shape in civil society rather than in formal channels. The survey data fits that pattern — high personal autonomy (marriage as choice at 4.33), high climate regulation support (3.70), near-total rejection of family obligation (2.07) — a coherent profile organized around self-determination rather than party-mediated reform. The shared anti-PC score masks opposite targets: for this group, restrictive speech norms are experienced as constraints on feminist expression, not as pro-feminist overcorrection.
+The 20s female profile is not a mirror image of 20s male grievance. Go (2025) suggests that because women's political mobilization in Korea developed largely outside party structures, the resulting politics of self-determination took shape in civil society rather than in formal channels. The scores support that reading: marriage as personal choice (4.33), climate regulation (3.70), near-total rejection of family obligation (2.07) — a profile organized around self-determination rather than party-mediated reform. The shared anti-PC score masks opposite targets: for this group, restrictive speech norms are experienced as constraints on feminist expression, not as pro-feminist overcorrection.
 
 ---
 
@@ -114,7 +114,7 @@ The profile is close to 20s males but slightly more institutionally oriented. Ge
 
 Top scores: marriage is a personal choice (4.29), punishing wrongdoers feels satisfying (**4.05**, among the highest of any group on this item), adolescents need more discipline (3.99).
 
-The high retributive justice score alongside strong procedural fairness norms is worth noting. Having children as a social obligation scores 2.09 — lower than 20s women.
+Retributive justice at 4.05 alongside strong procedural fairness norms is an unusual combination. Having children as a social obligation scores 2.09 — lower than 20s women.
 
 ---
 
@@ -178,7 +178,7 @@ Traditional gender views persist but are weaker than 60s males. Intergenerationa
 
 Top scores: we must leave a better world for the next generation (4.47), caring for the weak and vulnerable (4.18), equal treatment for all people (4.15).
 
-Having children as a social obligation: 3.24 — notably lower than 70s males (3.86), suggesting loosened traditional views even within the oldest female cohort.
+Having children as a social obligation: 3.24 — notably lower than 70s males (3.86). Even the oldest female cohort holds looser views on family obligation than their male peers.
 
 ---
 
@@ -194,19 +194,19 @@ Jung and Clifford (2025) offer a mechanism for this surface convergence: when va
 
 "Punishing wrongdoers feels satisfying" scores 3.93 overall, near-universally above neutral, alongside high scores for legal fairness. Justice in this data is punitive and rule-based. That is not pathology — it is a coherent moral position held broadly and consistently.
 
-Hall and Kim (2024) draw a distinction between *personal* unfairness — the sense that the rules have been applied unequally to oneself — and *social* unfairness — the sense that the system produces unjust outcomes for society as a whole. Personal unfairness drives support for right-wing populism and punitive justice; social unfairness drives redistribution demands. The near-universal retributive justice score in this data, combined with high procedural fairness scores and low redistribution support (§5D), maps broadly onto Hall and Kim's personal-unfairness pathway: the moral demand is for equal rule application, not structural correction.
+Hall and Kim (2024) draw a distinction between *personal* unfairness — the sense that rules have been applied unequally to oneself — and *social* unfairness — the sense that the system produces unjust outcomes for society as a whole. Personal unfairness drives support for right-wing populism and punitive justice; social unfairness drives redistribution demands. The near-universal retributive justice score here, combined with high procedural fairness and low redistribution support (§5D), maps broadly onto Hall and Kim's personal-unfairness pathway: the moral demand is for equal rule application, not structural correction.
 
 ### The gender wage gap — the sharpest fracture
 
 Of 36 questions, the gender wage gap item produces the largest within-cohort gap in the 20s (+1.18) and the largest mean gender gap overall (+0.66). The disagreement is empirical: is the pay difference the result of legitimate factors, or structural discrimination? Men and women in the same cohort have fundamentally different answers.
 
-The factual dispute about the wage gap is itself politically constituted. Lee (2025) shows that among young Korean men, skepticism about structural gender discrimination is not an outlier position but a majority-held view that clusters with conservative political identity. The 20s male group's score of 3.31 (above neutral) and the 20s female group's score of 2.13 (well below neutral) reflect not a difference in information but a difference in the operative causal model: legitimate sorting versus structural discrimination. Go (2025) connects this to institutional weakness — without party-based representation of women's interests, the structural account of gender inequality lacks political champions who would normalize it in mainstream discourse.
+The factual dispute about the wage gap is itself politically constituted. Lee (2025) shows that among young Korean men, skepticism about structural gender discrimination is not an outlier position but a majority-held view that clusters with conservative political identity. Men score 3.31 on this item, women score 2.13. That gap reflects not a difference in information but a difference in causal models: legitimate sorting versus structural discrimination. Go (2025) connects this to institutional weakness — without party-based representation of women's interests, the structural account of gender inequality lacks political champions who would normalize it in mainstream discourse.
 
 ### Equality in principle, redistribution in practice
 
 Groups scoring 4.0+ on equal treatment and fair legislation score below 2.5 on "the world would be better if everyone earned the same." Equality is procedural — equal rules, not equal outcomes. Arguments framed around redistribution face a harder road than arguments framed around consistent rule application.
 
-This procedural-versus-distributive gap has structural correlates. Cusack, Iversen, and Rehm (2006) show that redistribution preferences are driven by exposure to labor market risk: workers with specific, non-transferable skills and high unemployment risk support redistribution most strongly. Korea's credentials-heavy labor market produces relatively low skill specificity — closer to general-skills economies than to vocational-training systems like Germany's — which structurally dampens redistribution demand even when material inequality is high. Hajdu (2025) adds a perceptual layer: perceived unfairness reduces subjective social status more sharply than perceived inequality does, suggesting that unfairness and inequality operate as distinct psychological channels. If that distinction holds politically, it helps explain why this survey's respondents score 4.0+ on equal treatment but below 2.5 on equal outcomes — the operative grievance is unfair process, not unequal distribution, and redistribution arguments do not address it.
+This redistribution gap has structural correlates. Cusack, Iversen, and Rehm (2006) show that redistribution preferences are driven by exposure to labor market risk: workers with specific, non-transferable skills and high unemployment risk support redistribution most strongly. Korea's credentials-heavy labor market produces relatively low skill specificity — closer to general-skills economies than to vocational-training systems like Germany's — which structurally dampens redistribution demand even when material inequality is high. Hajdu (2025) adds a perceptual dimension: perceived unfairness reduces subjective social status more sharply than perceived inequality does. The two seem to work as distinct psychological channels. If that distinction holds politically, it helps explain why respondents score 4.0+ on equal treatment but below 2.5 on equal outcomes — the operative grievance is unfair process, not unequal distribution, and redistribution arguments do not address it.
 
 ### Social alienation is young and male
 
@@ -218,7 +218,7 @@ This procedural-versus-distributive gap has structural correlates. Cusack, Ivers
 
 Still low in absolute terms. But consistently higher among young males, and they cluster alongside discourse norm frustration and class grievance in the same cohort. Not a crisis yet. Worth watching.
 
-The clustering of alienation signals with economic grievance in the same cohort is consistent with cross-national patterns. Lee (2025) finds that economic insecurity among young Korean men — declining employment, rising housing costs, reversed expectations of intergenerational mobility — combines with traditional gender norms to produce receptivity to anti-feminist populism. The alienation items in this survey (society collapse, desire to destroy, imagining human extinction) are the affective residue of that combination, not its cause. A parallel exists in European research: Cremaschi, Bariletto, and De Vries (conditionally accepted) show that in southern Italy, an agricultural crisis increased far-right support most sharply where public service provision was weakest — not through economic loss alone, but by activating a pre-existing narrative of abandonment by the state. The Korean cohort is not a region, but the structure rhymes: perceived economic abandonment, unaddressed by institutional channels, co-occurring with the alienation signals visible in this data.
+This clustering has parallels elsewhere. Lee (2025) finds that economic insecurity among young Korean men — declining employment, rising housing costs, reversed expectations of intergenerational mobility — combines with traditional gender norms to produce receptivity to anti-feminist populism. The alienation items in this survey (society collapse, desire to destroy, imagining human extinction) are the affective residue of that combination, not its cause. Cremaschi, Bariletto, and De Vries (conditionally accepted) show that in southern Italy, an agricultural crisis increased far-right support most sharply where public service provision was weakest — not through economic loss alone, but by activating a pre-existing narrative of abandonment by the state. The Korean cohort is not a region, but the structure rhymes: perceived economic abandonment, unaddressed by institutional channels, alongside the alienation signals visible in this data.
 
 ---
 
