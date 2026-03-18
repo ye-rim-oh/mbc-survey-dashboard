@@ -80,13 +80,15 @@ Why that split runs so deep in Korea specifically has an institutional dimension
 
 ## 4. Group profiles
 
-### 20s Male — "Anti-PC, meritocratic, frustrated"
+### 20s Male — "Conservative exception on gender: the generational reversal"
 
-Top scores: our society these days tends to overreact even to a single word (**3.97**, highest of any group on this item), marriage is a personal choice (3.90), it feels good when wrongdoers are caught and punished (3.89).
+Top scores: our society these days tends to overreact even to a single word (**3.97**, highest of any group), marriage is a personal choice (3.90), it feels good when wrongdoers are caught and punished (3.89).
 
-Discourse frustration defines the profile, not nihilism — the nihilism scores are low. On the gender wage gap, 20s males score 3.31 vs. 20s females at 2.13, a within-cohort gap of +1.18 and the largest in the data. They are skeptical of redistribution but not of fairness itself. The grievance is about inconsistent rule application.
+The anti-PC score gets the most attention, but the more revealing pattern is how this cohort compares to others on gender-equality items. Their wage gap score (3.31, above neutral) sits closer to 50s males (3.41) than to 20s females (2.13), a within-cohort gap of +1.18 and the largest in the data. "Women should prioritize family and children" (2.67) and anti-discrimination discomfort (2.95) follow the same line: below older male levels, yet well above 20s female scores and well above what the age-progressivism gradient would predict for the youngest cohort.
 
-This disposition doesn't exist in an economic vacuum. Lee (2025) argues that employment insecurity and the burden of family formation have heightened some young men's receptivity to anti-feminist framing: when meritocratic expectation meets constrained opportunity, feminist policy can appear as an unfair advantage granted to a competitor. That profile — high meritocracy scores, high anti-PC scores, low redistribution support — fits.
+On marriage as a personal choice, 20s males score 3.90, near the top of the data — as individualistic as any group. On structural gender equality, their scores track with generations thirty years older. Anti-PC sentiment runs across young cohorts; that specific conservatism on gender does not. The departure from the generational gradient on gender, rather than the nihilism scores (which remain low), is what makes this profile demographically unusual.
+
+Lee (2025) connects this to employment insecurity and rising family-formation costs: when meritocratic expectation meets constrained opportunity, feminist policy can read as an unfair advantage granted to a competitor. High meritocracy scores, high anti-PC scores, low redistribution support — the data fits that account. The conservatism is not about deference to authority or family tradition. It is a fairness objection, directed specifically at gender-equality claims.
 
 ---
 
@@ -224,17 +226,19 @@ This clustering has parallels elsewhere. Lee (2025) finds that economic insecuri
 
 ## 6. Conclusion
 
-Korean social values resist easy left-right mapping. The data traces a tension between near-universal procedural commitments — fairness, legal equality, intergenerational responsibility — and deep disagreement over what those commitments imply in practice.
+The data does not map cleanly onto left-right. Near-universal procedural commitments — fairness, legal equality, intergenerational responsibility — coexist with deep disagreement over what those commitments actually require.
 
-The generational divide is sharpest on the least overtly political terrain. Traditional family expectations around motherhood and marriage separate the 20s from the 70s by over a full scale point, while attitudes toward abstract equality barely differ across generations. The gender divide is sharpest where the disagreement is empirical: not whether women should be equal, but whether the wage gap reflects legitimate factors. On that question, 20s men and 20s women are more than a point apart.
+The generational divide is sharpest on the least overtly political terrain. Traditional family expectations around motherhood and marriage separate the 20s from the 70s by more than a full scale point, while abstract equality scores barely move across generations. The gender divide runs along an empirical disagreement: not whether women should be equal, but whether the wage gap reflects legitimate factors. On that question, 20s men and 20s women are more than a point apart.
 
-Equality reads as procedural throughout: equal rules score above 4.0, equal outcomes below 2.5. Justice reads as retributive, consistently and broadly. The "too sensitive" item is a near-consensus number that conceals opposite frustrations depending on who is answering.
+Equality reads as procedural throughout — equal rules above 4.0, equal outcomes below 2.5. Justice reads as retributive, broadly and consistently. The "too sensitive" item produces near-identical scores across groups but encodes opposite frustrations depending on who is answering.
 
-Social alienation among young men is the one signal that sits apart from the rest.
+The social alienation signals cluster among young men and sit somewhat apart from the other patterns in the data. They are worth holding alongside a more structurally anomalous finding.
 
-The durability of these patterns is not preordained. Han (2022) argues that elite polarization in South Korea has shifted from cyclical adversarialism toward a more entrenched pattern — a dynamic that, if it continues, may make it harder for political institutions to reabsorb cross-cutting grievances. If elite polarization continues to harden along gender and generational lines, the procedural consensus captured in this data may fracture not around outcomes but around the definition of fairness itself. The data here marks a cross-section, not a trajectory. The combination of high procedural commitment and unresolved empirical dispute — about the wage gap, about who bears family costs, about what language norms protect — is where that trajectory will be decided.
+Almost every pattern in this dataset follows age: older cohorts score higher on traditional family norms, deference to social order, and resistance to change. 20s males break that gradient, but only on gender. On personal autonomy they match or exceed 20s women (marriage as personal choice: 3.90). On traditional family obligation their scores are well below older generations. But on the wage gap (3.31), women prioritizing family (2.67), and anti-discrimination discomfort (2.95), they land closer to 50s and 60s males than to any peer group across the gender line. The conservatism is gender-specific — it cuts against both the youth-as-progressive assumption and the simple age-conservatism gradient. The nihilism scores remain low and are not, on their own, what distinguishes this cohort; the gender-equality gap is.
 
-The absolute scores remain low — but generational grievance, discourse norm frustration, and mild nihilistic ideation cluster in the same cohort. That combination doesn't explain anything yet. It's worth watching.
+Han (2022) argues that elite polarization in South Korea has shifted from cyclical adversarialism toward something more entrenched, which would make it harder for political institutions to absorb cross-cutting grievances over time. If polarization continues to harden along gender and generational lines, the procedural consensus in this data may eventually fracture over the definition of fairness rather than over outcomes. The unresolved empirical disputes — over the wage gap, who bears family costs, what speech norms protect — are where that fracture would form.
+
+The alienation scores cluster with discourse frustration and economic grievance in the same cohort. That combination does not resolve into a causal story by itself, but it does mark where the sharpest and most structurally specific polarization in this dataset sits.
 
 ---
 
