@@ -109,11 +109,11 @@ age_en <- c(
   "40대" = "40s",
   "50대" = "50s",
   "60대" = "60s",
-  "70대" = "70s",
-  "70대 이상" = "70s"
+  "70대" = "70+",
+  "70대 이상" = "70+"
 )
 
-age_order <- c("20s", "30s", "40s", "50s", "60s", "70s")
+age_order <- c("20s", "30s", "40s", "50s", "60s", "70+")
 
 # Gender labels are centralized for the grouped summaries.
 gender_en <- c(

@@ -2,6 +2,10 @@
 
 source("R/translations.R")
 
+# Override the oldest age label in derived outputs so all displays read "70+"
+# rather than the less precise decade label.
+age_order <- c("20s", "30s", "40s", "50s", "60s", "70+")
+
 # Return one wide table for summaries and one long table for charts from the same cleaned source.
 load_survey_data <- function() {
   df <- readr::read_csv(
@@ -23,6 +27,7 @@ load_survey_data <- function() {
   # Fall back to the source label so unmatched rows are still usable.
   df$question_en <- ifelse(is.na(df$question_en), df$question_kr, df$question_en)
   df$age_en      <- ifelse(is.na(df$age_en),      df$age_kr,      df$age_en)
+  df$age_en      <- ifelse(df$age_en == "70s", "70+", df$age_en)
 
   # Set the age order now so plots do not sort groups alphabetically.
   df$age_en <- factor(df$age_en, levels = age_order)

@@ -1,6 +1,6 @@
-# MBC Survey 2025 — What Is your "Political Blood Type"?
+# MBC Survey 2025: What Is Your "Political Blood Type"?
 
-An interactive Shiny dashboard exploring South Korean social values across age groups and genders, based on MBC's Political Blood Type quiz response data.
+An interactive Shiny dashboard and companion analysis of South Korean social values across age groups and genders, based on MBC's Political Blood Type quiz response data.
 
 **Live app:** https://z25die-0-0.shinyapps.io/mbc-survey-dashboard/
 
@@ -8,46 +8,84 @@ An interactive Shiny dashboard exploring South Korean social values across age g
 
 ## Data
 
-`MBCsurvey.csv` — 432 rows (36 questions × 6 age groups × 2 genders)
+`MBCsurvey.csv` contains 432 grouped observations:
+
+- 36 survey questions
+- 6 age groups (`20s`, `30s`, `40s`, `50s`, `60s`, `70+`)
+- 2 gender groups (`Male`, `Female`)
+
+Each row stores the response distribution for one `question x age x gender` cell on a five-point Likert scale.
 
 | Column | Description |
 |--------|-------------|
-| question | Survey question |
-| age_group | Age group: 20s–70s |
-| gender | Gender: M / W |
-| strongly_disagree ~ strongly_agree | 5-point Likert response percentages |
+| `question_kr` | Original Korean survey question |
+| `age_kr` | Original Korean age label |
+| `gender` | Raw gender label in the source file |
+| `pct_sd` to `pct_sa` | Response shares from strongly disagree to strongly agree |
 
-Each row contains the **percentage distribution** of responses for one question × age × gender cell. Scores are computed as weighted means on a 1–5 scale (1 = Strongly Disagree, 5 = Strongly Agree).
+The analysis scripts rescale each row to sum to 100 and compute weighted mean scores on a 1-5 scale:
 
+- `1` = Strongly Disagree
+- `3` = Neutral
+- `5` = Strongly Agree
 
----
-
-## Dashboard Usage
-
-**Controls**
-- Select a question
-- Filter by age and gender
-
-**Tabs**
-| Tab | Chart |
-|-----|-------|
-| By Age Group | Stacked bar — response distribution across 6 age groups, split by gender |
-| By Gender | Grouped bar — mean score by gender across age groups |
-| Score Heatmap | Age × gender grid with weighted mean scores (red = disagree, blue = agree) |
+Because the repository contains grouped cells rather than respondent-level microdata, all regression outputs are descriptive summaries of age-by-gender patterns.
 
 ---
 
-## Structure
+## Dashboard
 
-```
-├── app.R                  # Shiny app (ui + server)
-├── MBCsurvey.csv          # Survey data
-├── R/
-│   ├── translations.R     # Korean → English label mappings
-│   ├── data_prep.R        # Data loading and transformation
-│   └── plot_functions.R   # ggplot2 + plotly chart functions
-└── www/
-    └── styles.css         # Apple-style CSS
+The deployed app presents one question at a time through two linked views:
+
+- A stacked bar chart showing the full response distribution by age and gender
+- A grouped bar chart showing weighted mean scores by age and gender
+
+Users can:
+
+- Select a question from the full translated item list
+- Filter the display by age group
+- Filter the display by gender
+
+The app uses one shared cleaned dataset so the charts and the written analysis stay aligned in wording and scores.
+
+---
+
+## Analysis
+
+The repository also includes a narrative write-up and supporting R scripts:
+
+- `analysis.md`: written interpretation of the dataset
+- `R/regression_analysis.R`: theme construction and descriptive regressions
+- `_analysis_data.R`: reproducible summary output used to check the write-up
+- `tests/test_regression_analysis.R`: smoke test for the regression pipeline
+
+The current descriptive regression section uses five indices:
+
+- Traditional family norms
+- Gender inequality skepticism
+- Procedural fairness
+- Authoritarian order
+- Alienation
+
+---
+
+## Project Structure
+
+```text
+app.R
+MBCsurvey.csv
+analysis.md
+_analysis_data.R
+_deploy.R
+R/
+  data_prep.R
+  plot_functions.R
+  regression_analysis.R
+  translations.R
+tests/
+  test_regression_analysis.R
+www/
+  styles.css
 ```
 
 ---
@@ -55,10 +93,22 @@ Each row contains the **percentage distribution** of responses for one question 
 ## Run Locally
 
 ```r
-# Install dependencies
-install.packages(c("shiny", "bslib", "readr", "dplyr", "tidyr",
-                   "ggplot2", "plotly", "DT"))
+install.packages(c(
+  "shiny", "bslib", "readr", "dplyr", "tidyr",
+  "ggplot2", "plotly"
+))
 
-# Run
 shiny::runApp()
+```
+
+To regenerate the descriptive analysis outputs:
+
+```bash
+Rscript _analysis_data.R
+```
+
+To run the regression smoke test:
+
+```bash
+Rscript tests/test_regression_analysis.R
 ```
