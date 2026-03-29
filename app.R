@@ -1,4 +1,4 @@
-# app.R — MBC Survey Dashboard
+# Keep the dashboard entry point small so shared data prep and plotting stay easy to trace.
 
 library(shiny)
 library(bslib)
@@ -20,7 +20,7 @@ all_questions <- df_wide |>
   dplyr::distinct(question_en) |>
   dplyr::arrange(question_en)
 
-# ── UI ────────────────────────────────────────────────────────────────────────
+# This file mainly binds one shared control state to two complementary views of the same question.
 ui <- bslib::page_fillable(
   theme = bslib::bs_theme(
     version      = 5,
@@ -32,11 +32,11 @@ ui <- bslib::page_fillable(
   ),
   tags$head(tags$link(rel = "stylesheet", href = "styles.css")),
 
-  # ── Controls ────────────────────────────────────────────────────────────────
+  # Put the controls first so both charts always read from the same question and filters.
   tags$div(
     class = "controls-wrap",
 
-    # Row 1: Question
+    # Keep one active question at a time so the dashboard stays focused on one item.
     tags$div(
       class = "control-row",
       tags$div(
@@ -51,7 +51,7 @@ ui <- bslib::page_fillable(
       )
     ),
 
-    # Row 2: Age + Gender filters
+    # Age and gender filters stay separate so users can isolate one cleavage without changing the question.
     tags$div(
       class = "filter-row",
       tags$div(
@@ -77,7 +77,7 @@ ui <- bslib::page_fillable(
     )
   ),
 
-  # ── Charts ──────────────────────────────────────────────────────────────────
+  # Show both the full response spread and the mean score because either view alone hides part of the pattern.
   tags$div(
     class = "charts-wrap",
     bslib::card(
@@ -91,7 +91,7 @@ ui <- bslib::page_fillable(
   )
 )
 
-# ── Server ────────────────────────────────────────────────────────────────────
+# Server logic only coordinates the shared filters and chart outputs.
 server <- function(input, output, session) {
   selected_q <- shiny::reactive({
     req(input$sel_question)

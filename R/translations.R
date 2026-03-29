@@ -1,6 +1,7 @@
-# R/translations.R
+# Keep all label lookups in one place so the dashboard and analysis scripts use the same wording.
+# Some raw Korean keys render poorly in some terminals, but they must stay exact because they are lookup keys.
 
-# ── Question translations ────────────────────────────────────────────────────
+# Question labels are centralized here so plots and tables do not drift in wording.
 question_en <- c(
   "가족보다 개인의 직업 성공이 더 중요하다"                       = "Career success matters more than family",
   "결혼은 개인의 선택이다"                                         = "Marriage is not an obligation — it is a personal choice",
@@ -76,8 +77,7 @@ question_en <- c(
   "부유해지는 것은 삶의 가장 중요한 목표다."                        = "Becoming wealthy is the most important goal in life"
 )
 
-# ── Keyword / Category translations ─────────────────────────────────────────
-# Recategorised for clearer thematic grouping
+# Category labels live here so the dashboard and text summaries share one thematic vocabulary.
 keyword_en <- c(
   "개인주의"     = "Individualism",
   "과민성"       = "Social Sensitivity Backlash",
@@ -102,7 +102,7 @@ keyword_en <- c(
   "우열 수용체"     = "Hierarchy & Merit"
 )
 
-# ── Age group labels ─────────────────────────────────────────────────────────
+# Age labels and their display order stay together so grouped outputs stay consistent.
 age_en <- c(
   "20대" = "20s",
   "30대" = "30s",
@@ -115,7 +115,7 @@ age_en <- c(
 
 age_order <- c("20s", "30s", "40s", "50s", "60s", "70s")
 
-# ── Gender labels ────────────────────────────────────────────────────────────
+# Gender labels are centralized for the grouped summaries.
 gender_en <- c(
   "M" = "Male",
   "W" = "Female",
@@ -123,7 +123,7 @@ gender_en <- c(
   "여성" = "Female"
 )
 
-# ── Likert scale labels ──────────────────────────────────────────────────────
+# Likert labels stay here so long-form charts and tables use the same ordering.
 likert_labels <- c(
   "전혀 그렇지 않다" = "Strongly Disagree",
   "그렇지 않다"      = "Disagree",
