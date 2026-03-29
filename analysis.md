@@ -156,7 +156,11 @@ This is the most universalist profile among the oldest respondents. Even here, f
 
 ## 3. Regression Analysis
 
-To reduce the 36 items to a smaller descriptive map, I build five simple indices: **traditional family norms**, **gender inequality skepticism**, **procedural fairness**, **authoritarian order**, and **alienation**. The gender index combines agreement that the gender wage gap has legitimate reasons with reverse-coded support for an anti-discrimination law. For each index, I fit a cell-level linear regression of the form `index score = age decade + female + age*female`, using the 12 age-gender cells. Because the source data are grouped means rather than individual-level responses, and because cell sample sizes are not available, these regressions are descriptive only. They show where the main fault lines lie. They do not identify causes.
+To reduce the 36 items to a smaller descriptive map, I build five simple indices: **traditional family norms**, **gender inequality skepticism**, **procedural fairness**, **authoritarian order**, and **alienation**. The gender index combines agreement that the gender wage gap has legitimate reasons with reverse-coded support for an anti-discrimination law. For each index, I fit a cell-level linear regression using the 12 age-gender cells:
+
+`IndexScore_i = beta_0 + beta_1 AgeStep_i + beta_2 Female_i + beta_3 (AgeStep_i x Female_i) + epsilon_i`
+
+Here, `AgeStep` is age measured in decades from the 20s group, and `Female = 1` for women and `0` for men. Because the source data are grouped means rather than individual-level responses, and because cell sample sizes are not available, these regressions are descriptive only. They show where the main fault lines lie. They do not identify causes.
 
 ### Fitted profiles from the descriptive regressions
 
@@ -167,6 +171,38 @@ To reduce the 36 items to a smaller descriptive map, I build five simple indices
 | Procedural fairness | 3.60 | 3.75 | 4.33 | 4.17 |
 | Authoritarian order | 3.63 | 3.74 | 4.08 | 3.93 |
 | Alienation | 2.15 | 1.87 | 1.70 | 1.69 |
+
+### Coefficient table for the descriptive regressions
+
+`20s male baseline` is the fitted starting point for men in their 20s. `Male age slope` is the change per
+decade among men. `Female gap in 20s` is the female-male difference in the 20s. `Female age-slope difference`
+shows how much the female age gradient differs from the male one.
+
+| Term | Traditional family norms | Gender inequality skepticism | Procedural fairness | Authoritarian order | Alienation |
+|------|--------------------------|------------------------------|---------------------|---------------------|------------|
+| 20s male baseline | 2.62***<br>(0.09) | 3.15***<br>(0.08) | 3.60***<br>(0.06) | 3.63***<br>(0.04) | 2.15***<br>(0.09) |
+| Male age slope (per decade) | 0.22***<br>(0.03) | -0.04<br>(0.03) | 0.15***<br>(0.02) | 0.09***<br>(0.01) | -0.09**<br>(0.03) |
+| Female gap in 20s | -0.54***<br>(0.13) | -0.79***<br>(0.11) | 0.15<br>(0.08) | 0.11*<br>(0.06) | -0.28**<br>(0.12) |
+| Female age-slope difference | 0.11**<br>(0.04) | 0.17***<br>(0.04) | -0.06*<br>(0.03) | -0.05**<br>(0.02) | 0.05<br>(0.04) |
+
+*Entries are OLS coefficients with standard errors in parentheses. `* p < 0.10`, `** p < 0.05`, `*** p < 0.01`.*
+
+### Statistically clear coefficients
+
+The age slope is positive and clearly estimated for `Traditional family norms`, `Procedural fairness`, and
+`Authoritarian order`, while it is negative for `Alienation`. That is the most stable age pattern in the
+models. By contrast, the age slope for `Gender inequality skepticism` is not conventionally distinguishable
+from zero among men.
+
+The 20s gender gap is also concentrated in a few domains. It is clearly negative for `Traditional family
+norms`, `Gender inequality skepticism`, and `Alienation`, which means 20s women score lower than 20s men on
+those indices. The female gap is not clearly estimated for `Procedural fairness`, and only weakly so for
+`Authoritarian order`.
+
+The interaction term matters for three indices. Women age upward faster than men on `Traditional family
+norms` and `Gender inequality skepticism`, which is why those youth gender gaps narrow with age. On
+`Authoritarian order`, the female age gradient is flatter than the male one. `Procedural fairness` is only
+marginal on this term, and `Alienation` shows no clear gender difference in the age slope.
 
 Traditional family norms remain the clearest age cleavage in the data. Among men, the fitted score rises by about **0.22 points per decade**, and the positive interaction term means women move upward with age even faster. What begins as a sharp youth gender divide ends in near-convergence at the top: both 70+ men and 70+ women sit near 3.75. This is still the cleanest quantitative summary of the survey. The deepest line of division is not abstract equality. It is obligation inside the family.
 
