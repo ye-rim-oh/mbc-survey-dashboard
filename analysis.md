@@ -1,8 +1,7 @@
 # MBC Survey 2025: What Is Your "Political Blood Type"?
 
 - **Data:** MBC Political Blood Type quiz comparison data, based on 36 survey items by 6 age groups and 2 gender groups
-- **Source note:** MBC describes the political blood type service as a political-orientation test designed on the basis of a social survey of 3,027 respondents, with comparison by gender and age ([MBC 2025](https://plood.poll-mbc.co.kr/result.html?data=DOG9NVRJ2sUYW2LqZDLCl&name=%EC%97%90%EB%AA%BD%EA%B5%B0&type=aBcD); [iMBC 2025](https://www.imbc.com/broad/enews/view.html?idx=461161))
-- **Scale:** 1 = Strongly Disagree / 3 = Neutral / 5 = Strongly Agree
+- **Source note:** MBC describes the political blood type service as a political-orientation test designed on the basis of a social survey of 3,027 respondents, with comparison by gender and age
 - **Groups:** 20s-70+ x Male/Female
 
 ---
